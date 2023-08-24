@@ -9,7 +9,7 @@ const connectToMongo = require('./db/connection');
 const apiRoutes = require('./routes');
 
 const app = express();
-const port = 16968;
+const port = 3000;
 
 app.use(express.json());
 
@@ -75,7 +75,7 @@ app.use(
   swaggerUi.setup(specs, { explorer: true })
 );
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log(`Server is running on port ${port}`);
 });
 
