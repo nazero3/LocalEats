@@ -27,7 +27,8 @@ app.use(passport.initialize());
 // Home Route
 // Attention: when we want to see the ejs dont npm start, go to the folder and node app.js
 app.get('/', (req, res) => {
-  res.render('home');
+  console.log('responding to root route');
+  res.send('hello from rooot');
 });
 
 const options = {
