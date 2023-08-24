@@ -9,7 +9,7 @@ const connectToMongo = require('./db/connection');
 const apiRoutes = require('./routes');
 
 const app = express();
-const port = 3000;
+const port = 16968;
 
 app.use(express.json());
 
